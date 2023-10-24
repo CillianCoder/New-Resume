@@ -1,0 +1,43 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+    color: #45474B;
+}
+
+.nav-ul {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-ul>li {
+    display: inline;
+    margin-right: 20px;
+    letter-spacing: 10px;
+    font-weight: bold;
+
+
+}
+
+.background-image {
+    height: 60rem;
+    background-image: url(./image/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: #F5F7F8;
+}
+
+a:active {
+    color: #FF6000;
+}
