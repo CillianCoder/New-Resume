@@ -1,6 +1,8 @@
 body {
     font-family: 'Lexend Deca', sans-serif;
-    color: #200E3A;
+    color: #F5F7F8;
+    background-color: #000814;
+    scroll-behavior: smooth;
 }
 
 /* navigation-bar */
@@ -29,15 +31,15 @@ body {
 
 }
 
-a {
+nav a {
     text-decoration: none;
     color: #F5F7F8;
+    cursor: pointer;
 }
 
-a:active {
+nav a:hover {
     color: #FF6000;
 }
-
 
 body,
 .name {
@@ -71,5 +73,13 @@ body,
 
 .highlight {
     color: #F5F7F8;
+}
+
+.horizontal-line {
+    opacity: 0.2;
+}
+
+.brief-explain {
+    color:  #200E3A;
 }
 
