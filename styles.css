@@ -162,3 +162,106 @@ body,
 }
 
 /* Resume Section */
+
+#resume {
+    background-color: #f5f7f8;
+    color: #000814;
+}
+
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.resume-heading-div {
+    width: 20%;
+    margin-left: 20%;
+}
+
+.resume-info {
+    width: 60%;
+}
+
+.resume-heading {
+    border-bottom: 1px solid orangered;
+    margin-right: 150px;
+    margin-top: 2rem;
+}
+
+.info-heading,
+.top-margin {
+    margin-top: 2rem;
+}
+
+.year {
+    margin-left: 5rem;
+}
+
+.font-change {
+    color:#61677A;
+    font-style: italic;
+}
+
+.info-justify {
+    margin-right: 10rem;
+    text-align: justify;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    margin-top: 20px;
+
+}
+
+.skill-bar {
+background-color: #61677A;
+height: 40px;
+border-radius: 6px;
+margin-top: 10px;
+width: 80%;
+}
+
+.skill-level {
+    background-color: #200e3a;
+    transition: width 1s ease-in-out;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.html5 {
+    width: 98%;
+}
+
+.css {
+    width: 80%;
+}
+
+.wordpress {
+    width: 90%;
+}
+
+.jquery {
+    width: 70%;
+}
+
+.canva {
+    width: 80%;
+}
+.squarespace {
+    width: 60%;
+}
+
+.go-daddy {
+    width: 85%;
+}
+
+.shopify {
+    width: 90%;
+}
+
+.photoshop {
+    width: 98%;
+}
