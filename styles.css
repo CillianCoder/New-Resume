@@ -6,18 +6,23 @@ body {
 }
 
 /* navigation-bar */
+
+.nav-bar {
+    overflow: hidden;
+}
+
 .nav-ul {
     position: fixed;
     width: 100%;
     text-align: center;
     list-style-type: none;
     background-color: black;
-    width: 100%;
-    margin-top: 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 0;
     height: 35px;
     z-index: 1;
 }
+
 
 .nav-ul>li {
     display: inline;
@@ -27,6 +32,7 @@ body {
     text-align: center;
     line-height: 35px;
 }
+
 
 nav a {
     text-decoration: none;
@@ -68,6 +74,7 @@ body,
 
 .highlight {
     color: #f5f7f8;
+
 }
 
 .horizontal-line {
@@ -75,7 +82,9 @@ body,
 }
 
 .brief-explain {
-    color: #200e3a;
+    color: #030637;
+    font-size: large;
+    font-weight: lighter;
 }
 
 /* about section */
@@ -101,7 +110,7 @@ body,
 
 .container {
     display: flex;
-    height: 300px;
+    height: 10%;
     margin: 0;
     padding: 0;
 }
@@ -124,12 +133,12 @@ body,
 
 .contact-container {
     display: flex;
-    height: 150px;
+    height: 7rem;
 }
 
 .contact-details {
     flex: 1;
-    margin-left: 490px;
+    margin-left: 30%;
 }
 
 .cv-download {
@@ -141,7 +150,7 @@ body,
 .download-link {
     background-color: #232D3F;
     color: #f5f7f8;
-    padding: 15px;
+    padding: 1rem;
     padding-left: 30px;
     border-radius: 3px;
     text-decoration: none;
@@ -183,9 +192,13 @@ body,
 }
 
 .resume-heading {
-    border-bottom: 1px solid orangered;
     margin-right: 150px;
     margin-top: 2rem;
+    width: 100%;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: orangered;
+    text-decoration-thickness: 3px;
 }
 
 .info-heading,
@@ -203,7 +216,7 @@ body,
 }
 
 .info-justify {
-    margin-right: 10rem;
+    width: 80%;
     text-align: justify;
 }
 
@@ -368,31 +381,32 @@ body,
 .contact-field {
     text-align: center;
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .contact-field>p {
     text-align: center;
 }
 
-.image-paragraph>p {
+.image-paragraph>div>a {
     background-color: #232D3F;
-    margin: auto 43%;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 10px;
+    text-decoration: none;
+    color: #f5f7f8;
+    text-align: center;
 
 }
 
-.image-paragraph>p:hover {
+.image-paragraph>img {
+    margin-bottom: 2%;
+}
+
+.image-paragraph>div>a:hover {
     background-color: #FF5B22;
     opacity: 0.9;
 }
 
-.image-paragraph>p>a {
-    text-decoration: none;
-    color: #f5f7f8;
-}
 
 /* Footer section */
 
@@ -408,4 +422,158 @@ footer {
 
 .icons {
     padding-top: 1.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .first-look {
+        top: 30%;
+        max-width: 100%;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .about-paragraph {
+        margin-left: 2rem;
+        padding: 1rem;
+    }
+
+    .contact-container {
+        display: block;
+    }
+
+    .cv-download {
+        flex: 1;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 11rem;
+    }
+
+    .contact-details {
+        flex: 1;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .contact {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .image {
+        display: none;
+    }
+
+    .about-paragraph {
+        text-align: justify;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .first-look {
+        top: 15%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0 10px;
+    }
+
+
+    .brief-explain {
+        color: #030637;
+    }
+
+    .background-image {
+        height: 35rem;
+    }
+
+    .container {
+        height: 10%;
+    }
+
+    .nav-ul {
+        height: 30px;
+    }
+
+
+    .nav-ul>li {
+        margin-right: 10px;
+        letter-spacing: 1px;
+        font-weight: bolder;
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+    .resume-heading-div {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .resume-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .resume-heading {
+        margin-right: 150px;
+        margin-top: 1rem;
+        width: 100%;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-color: orangered;
+        text-decoration-thickness: 3px;
+    }
+
+    .info-heading,
+    .top-margin {
+        margin-top: 1rem;
+    }
+
+    .year {
+        margin-left: 1rem;
+    }
+
+    .font-change {
+        color: #61677A;
+        font-style: italic;
+    }
+
+    .info-justify {
+        margin-left: 10%;
+        text-align: justify;
+    }
+
+    .skill {
+        margin-bottom: 5%;
+    }
+
+    .skill-name {
+        margin-top: 20px;
+
+    }
+
+    .skill-bar {
+        background-color: #61677A;
+        height: 40px;
+        border-radius: 6px;
+        margin-top: 10px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .skill-level {
+        background-color: #200e3a;
+        transition: width 1s ease-in-out;
+        height: 100%;
+        border-radius: 6px;
+    }
+
 }
